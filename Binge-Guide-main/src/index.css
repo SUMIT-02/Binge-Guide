@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.myBorder {
+  border: 1px solid green;
+}
+.menuHover {
+  cursor: pointer;
+}
+.menuHover:hover .menuIcon {
+  color: #e21717 !important;
+}
+.menuHover:hover .menuText {
+  color: #fff !important;
+}
+.hideScrollBar {
+  overflow: scroll;
+}
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+.Dropdown-control {
+  background-color: #080405 !important;
+  color: #fff !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.Dropdown-control .dropdownDetails {
+  background-color: #fff !important;
+  color: #fff !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.movieHoverContainer:hover .movieDetails {
+  background-color: #00000080;
+}
+.movieHoverContainer:hover .movieCategory {
+  color: #e21717;
+}
+.movieDirector {
+  display: none;
+}
+.moviesButton {
+  display: none;
+}
+.movieHoverContainer:hover .movieDirector {
+  display: block;
+}
+.movieHoverContainer:hover .moviesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authBackground {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 23%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+      center no-repeat;
+  background-size: cover;
+}
+.smallText {
+  font-size: 10px;
+}
